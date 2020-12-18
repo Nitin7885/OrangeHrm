@@ -1,0 +1,15 @@
+blender hotkeys:-
+G - Grab - for movement choose axis x, y and z.
+R - Rotate
+S - Scale - for resizing 
+shift D - duplicate object
+. - focus on object
+shift a - for adding an object 
+f3 - for help
+tab - use to shift between edit mode and object mode
+alt z - for x ray mode
+p - 
+h - hide
+alt h - to unhide
+alt left - to select line 
+e - extrude
