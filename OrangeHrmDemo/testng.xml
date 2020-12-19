@@ -9,6 +9,7 @@
     <classes>
       <class name="testRunner.TestRunner"/>
       <class name="testRunner.TestRunnerOrange"/>
+      <class name="com.datadriven.test.PersonalDetailsTest"/>
     </classes>
   </test> 
   

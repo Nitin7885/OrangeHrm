@@ -1,4 +1,4 @@
-package orangeLogin;
+package StepDef;
 
 
 import static org.testng.Assert.assertEquals;
@@ -6,16 +6,18 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+
+import Pages.orangePageFactory;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import orangePageBean.orangePageFactory;
-import orangeLogin.TestRunnerOrange;
+import testRunner.TestRunnerOrange;
+
 
 public class StepDefOrange extends TestRunnerOrange {
 	
 	//private WebDriver driver;
-	//private orangePageFactory obj;
+	private orangePageFactory obj;
 
 @Given("^user is on login page$")
 public void user_is_on_login_page() {

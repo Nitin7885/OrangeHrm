@@ -11,10 +11,10 @@ import Pages.AddEmpPageFactory;
 import cucumber.api.java.en.*;
 import excelData.ExcelRead;
 
-public class StepDefLogin extends TestRunner {
+public class StepDefAddEmployee extends TestRunner {
 	
 	
-	ExcelRead er1 = new ExcelRead("C:/Users/NITIN SARGARA/Desktop/OrangeHrmLogin.xlsx",1);
+	ExcelRead er1 = new ExcelRead("./OrangeHrmLogin.xlsx",1);
 	
 	@Given("^Admin is on Add Employee page$")
 	public void admin_is_on_Add_Employee_page() throws InterruptedException {

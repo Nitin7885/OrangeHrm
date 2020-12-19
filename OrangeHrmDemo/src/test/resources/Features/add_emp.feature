@@ -1,3 +1,4 @@
+@Add_Employee
 Feature: Add Employee
 
 Scenario: Employee should be added with all required field

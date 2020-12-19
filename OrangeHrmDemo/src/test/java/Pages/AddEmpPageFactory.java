@@ -49,7 +49,7 @@ public class AddEmpPageFactory {
 		WebElement re_password;
 		
 		@FindBy(how=How.CSS, using="#btnSave")
-		@CacheLookup
+		//@CacheLookup
 		WebElement btnsave;
 		
 		@FindBy(how=How.CSS, using="#chkLogin")

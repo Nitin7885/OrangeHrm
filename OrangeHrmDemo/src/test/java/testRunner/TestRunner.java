@@ -14,7 +14,8 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.testng.*;
 
 @CucumberOptions (
-		features = "./src/test/resources/Features/",
+		tags = {"@Add_Employee"},
+		features = "./src/test/resources/Features/add_emp.feature",
 		glue = {"StepDef"},
         plugin = {"pretty","html:./target/cucumber-html-report","json:./target/cucumbertestreport.json"})
 public class TestRunner {

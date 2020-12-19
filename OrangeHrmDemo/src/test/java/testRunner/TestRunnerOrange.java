@@ -1,4 +1,4 @@
-package orangeLogin;
+package testRunner;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -15,15 +15,16 @@ import cucumber.api.CucumberOptions;
 
 import cucumber.api.testng.CucumberFeatureWrapper;
 import cucumber.api.testng.TestNGCucumberRunner;
-import orangePageBean.orangePageFactory;
+import Pages.orangePageFactory;
 import cucumber.api.testng.*; 
 
  
 
 @CucumberOptions(
-		features = "./src/test/resources/orangeHRM",
-		glue = {"orangeLogin"},
-		plugin = {"pretty"}
+		tags = {"@Login"},
+		features = "./src/test/resources/Features/",
+		glue = {"StepDef"},
+		plugin = {"pretty", "html:./target/cucumber-html-report","json:./target/cucumbertestreport.json"}
 )
 public class TestRunnerOrange {
 private TestNGCucumberRunner testNGCucumberRunner;
@@ -32,7 +33,7 @@ protected orangePageFactory obj;
     
     @BeforeClass(alwaysRun = true)
     public void setUpClass() throws Exception {   
-    	 System.setProperty("webdriver.chrome.driver", "C:\\\\\\\\seleniumdrivers\\\\\\\\chromedriver.exe");
+    	 System.setProperty("webdriver.chrome.driver", "./chromedriver.exe");
     	    driver = new ChromeDriver();
     	    //driver.get("https://opensource-demo.orangehrmlive.com/");
             testNGCucumberRunner = new TestNGCucumberRunner(this.getClass());
