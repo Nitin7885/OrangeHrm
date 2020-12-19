@@ -52,8 +52,7 @@ public class AddEmpPageFactory {
 		@CacheLookup
 		WebElement btnsave;
 		
-		@FindBy(how=How.CSS, using="#chkLogin")
-		@CacheLookup
+		@FindBy(how=How.XPATH, using="//input[@id='chkLogin']")
 		WebElement chklogin;
 		
 		
