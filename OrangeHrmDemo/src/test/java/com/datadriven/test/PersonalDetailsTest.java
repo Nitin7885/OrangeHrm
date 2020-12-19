@@ -49,7 +49,7 @@ public class PersonalDetailsTest{
 		System.out.println(url);
 		*/
 		
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\abc\\Downloads\\Programs\\chromeDriver\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "./chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get("https://opensource-demo.orangehrmlive.com/");
