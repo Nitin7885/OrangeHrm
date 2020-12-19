@@ -29,10 +29,7 @@
           <configuration>
         <forkCount>7</forkCount>
         <reuseForks>true</reuseForks>
-		  <suiteXmlFiles>
-    		<!-- pass testng.xml files as argument from command line -->
-    		<suiteXmlFile>testng.xml</suiteXmlFile>
-		</suiteXmlFiles>
+		  
         
     </configuration>
         </plugin>
