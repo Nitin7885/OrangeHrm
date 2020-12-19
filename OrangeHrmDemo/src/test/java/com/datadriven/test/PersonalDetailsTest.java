@@ -89,15 +89,15 @@ public class PersonalDetailsTest{
 		
 	    String data = driver.findElement(By.xpath("//*[@id=\"resultTable\"]/tbody/tr/td")).getText();
 	    String expectedResult = "No Records Found";
-	    Assert.assertEquals(data, expectedResult);
-	    
-	    if(data.contentEquals("No Records Found")) {
-	    	System.out.println("Status: **********PASSED");
+	    if(en.indexOf("%")!=-1) {
+	    	Assert.assertEquals(data, expectedResult);
+	    	System.out.println("This employee name is not ALLOWED!!");
 	    }
 	    else {
-	    	System.out.println("Status: **********FAILED");
+	    	Assert.assertNotEquals(data, expectedResult);
 	    }
-	    driver.close();
+	    
+	    
 	}
 	
 	@AfterTest

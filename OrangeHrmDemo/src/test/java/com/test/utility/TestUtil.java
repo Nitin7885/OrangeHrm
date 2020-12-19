@@ -9,7 +9,7 @@ public class TestUtil {
 	
 	public static ArrayList<Object[]> getDataFromExcel(){
 		ArrayList<Object[]> mydata  = new ArrayList<Object[]>();
-		reader = new Xls_Reader("C:\\Users\\abc\\Desktop\\CAPGEMINI TRAINING\\M4 Training Material\\Cases.xlsx");
+		reader = new Xls_Reader("./OrangeHrmLogin.xlsx");
 		
 		for(int rowNum = 2; rowNum <= reader.getRowCount("testCases"); rowNum++) {
 			String ename = reader.getCellData("testCases", "ename", rowNum);
