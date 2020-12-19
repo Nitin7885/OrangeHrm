@@ -85,7 +85,8 @@ public class AddEmpPageFactory {
 			this.driver = driver;
 		}*/
 		
-		public void setChklogin() {
+		public void setChklogin() throws InterruptedException {
+			Thread.sleep(1000);
 			chklogin.click();
 		}
 		
