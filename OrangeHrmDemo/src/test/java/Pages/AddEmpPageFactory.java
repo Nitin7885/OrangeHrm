@@ -143,7 +143,7 @@ public class AddEmpPageFactory {
 		}*/
 
 		public void setBtnsave() {
-			new WebDriverWait(driver,20).until(ExpectedConditions.elementToBeClickable(btnsave)).click();
+			btnsave.click();
 		}
 		
 		

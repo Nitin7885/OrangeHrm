@@ -49,6 +49,8 @@ public class StepDefAddEmployee extends TestRunner {
 
 	@When("^Admin does not enter firstname and lastname$")
 	public void admin_does_not_enter_firstname_and_lastname() {
+		add_emp.setFirstname("");
+		add_emp.setLastname("");
 		
 	}
 
