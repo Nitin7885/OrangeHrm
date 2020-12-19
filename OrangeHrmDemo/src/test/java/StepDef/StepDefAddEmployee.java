@@ -104,7 +104,7 @@ public class StepDefAddEmployee extends TestRunner {
 	}
 
 	@And("^check box is checked$")
-	public void check_box_is_checked() {
+	public void check_box_is_checked() throws InterruptedException {
 		add_emp.setChklogin();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	}
