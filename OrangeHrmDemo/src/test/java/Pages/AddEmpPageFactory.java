@@ -49,7 +49,7 @@ public class AddEmpPageFactory {
 		WebElement re_password;
 		
 		@FindBy(how=How.CSS, using="#btnSave")
-		//@CacheLookup
+		@CacheLookup
 		WebElement btnsave;
 		
 		@FindBy(how=How.CSS, using="#chkLogin")
@@ -87,7 +87,7 @@ public class AddEmpPageFactory {
 		}*/
 		
 		public void setChklogin() {
-			new WebDriverWait(driver,20).until(ExpectedConditions.elementToBeClickable(chklogin)).click();
+			chklogin.click();
 		}
 		
 		public WebElement getFirstname() {
