@@ -28,11 +28,7 @@
           <version>2.19</version>
           <configuration>
         <forkCount>7</forkCount>
-        <reuseForks>true</reuseForks>
-	<suiteXmlFiles>
-    		<!-- pass testng.xml files as argument from command line -->
-    		<suiteXmlFile>testng.xml</suiteXmlFile>
-		</suiteXmlFiles>	      
+        <reuseForks>true</reuseForks>	      
     </configuration>
         </plugin>
 
