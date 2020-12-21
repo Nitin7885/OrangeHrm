@@ -36,7 +36,7 @@ public class StepDefAddEmployee extends TestRunner {
 	}
 
 	@And("^click on save button$")
-	public void click_on_save_button() {
+	public void click_on_save_button() throws InterruptedException{
 		add_emp.setBtnsave();
 		driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
 	}
