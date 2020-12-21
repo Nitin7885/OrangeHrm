@@ -142,7 +142,8 @@ public class AddEmpPageFactory {
 			return btnsave;
 		}*/
 
-		public void setBtnsave() {
+		public void setBtnsave() throws InterruptedException {
+			Thread.sleep(1000);
 			btnsave.click();
 		}
 		
