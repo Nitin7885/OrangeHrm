@@ -74,7 +74,7 @@ public class StepDefAddEmployee extends TestRunner {
 
 	@And("^Admin add the selected file$")
 	public void admin_add_the_selected_file() throws IOException, InterruptedException {
-		Runtime.getRuntime().exec("C:/Users/NITIN SARGARA/Desktop/AutoitFile/Imageupload.exe");
+		Runtime.getRuntime().exec("./AutoitFile/Imageupload.exe");
 		Thread.sleep(3000);
 	}
 
@@ -92,7 +92,7 @@ public class StepDefAddEmployee extends TestRunner {
 
 	@When("^Admin add the selected file with incorrect format or size$")
 	public void admin_add_the_selected_file_with_incorrect_format_or_size() throws IOException, InterruptedException {
-		Runtime.getRuntime().exec("C:/Users/NITIN SARGARA/Desktop/AutoitFile/Imgupload.exe");
+		Runtime.getRuntime().exec("./AutoitFile/Imgupload.exe");
 		Thread.sleep(3000);
 	}
 
