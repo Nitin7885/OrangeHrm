@@ -7,9 +7,9 @@
 <!-- Test Started... -->
   <test name="Automation Test Report">
     <classes>
+      <class name="testRunner.TestRunnerOrange"/>
       <class name="testRunner.TestRunner"/>
-      <!--<class name="testRunner.TestRunnerOrange"/>-->
-      <!--<class name="com.datadriven.test.PersonalDetailsTest"/>-->
+      <class name="com.datadriven.test.PersonalDetailsTest"/>
     </classes>
   </test> 
   
