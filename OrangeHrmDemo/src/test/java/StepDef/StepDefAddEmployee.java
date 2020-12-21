@@ -75,13 +75,13 @@ public class StepDefAddEmployee extends TestRunner {
 	@And("^Admin add the selected file$")
 	public void admin_add_the_selected_file() throws IOException, InterruptedException {
 		Runtime.getRuntime().exec("C:/Users/NITIN SARGARA/Desktop/AutoitFile/Imageupload.exe");
-		Thread.sleep(10000);
+		Thread.sleep(3000);
 	}
 
 	@And("^Admin click on save button$")
 	public void admin_click_on_save_button() throws InterruptedException {
 		add_emp.setBtnsave();
-		Thread.sleep(3000);
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	}
 
 	@Then("^Employee should be added and navigate to personal details page$")
@@ -93,13 +93,13 @@ public class StepDefAddEmployee extends TestRunner {
 	@When("^Admin add the selected file with incorrect format or size$")
 	public void admin_add_the_selected_file_with_incorrect_format_or_size() throws IOException, InterruptedException {
 		Runtime.getRuntime().exec("C:/Users/NITIN SARGARA/Desktop/AutoitFile/Imgupload.exe");
-		Thread.sleep(10000);
+		Thread.sleep(3000);
 	}
 
 	@Then("^Error Message should be displayed\\.$")
 	public void error_Message_should_be_displayed() {
-		 driver.getPageSource().contains("Add Employee");
-		//Assert.assertEquals(txt,"Photograph");
+		String txt = add_emp.getImg_button().getText();
+		Assert.assertEquals(txt,"Photograph");
 		//driver.close();
 	}
 
