@@ -25,15 +25,12 @@ public class AddEmpPageFactory {
 		WebElement btnlogin;
 
 		@FindBy(id="firstName")
-		@CacheLookup
 		WebElement firstname;
 		
 		@FindBy(name="lastName")
-		@CacheLookup
 		WebElement lastname;
 		
 		@FindBy(how = How.XPATH, using="//label[contains(text(),'Photograph')]")
-		@CacheLookup
 		WebElement img_button;
 		
 		@FindBy(how=How.CSS, using ="#user_name")
