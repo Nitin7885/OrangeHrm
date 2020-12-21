@@ -8,8 +8,8 @@
   <test name="Automation Test Report">
     <classes>
       <class name="testRunner.TestRunnerOrange"/>
-      <!--<class name="testRunner.TestRunner"/>-->
-      <!--<class name="com.datadriven.test.PersonalDetailsTest"/>-->
+      <class name="testRunner.TestRunner"/>
+      <class name="com.datadriven.test.PersonalDetailsTest"/>
     </classes>
   </test> 
   
