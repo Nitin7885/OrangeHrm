@@ -34,7 +34,7 @@ public class PersonalDetailsTest{
 	public int waitTime;
 
 	
-	@BeforeTest
+	@BeforeClass
 	public void setUp() throws Throwable {
 		/*
 		File src = new File("./Attributes.property");
@@ -100,7 +100,7 @@ public class PersonalDetailsTest{
 	    
 	}
 	
-	@AfterTest
+	@AfterClass
 	public void tearDown() {
 		driver.quit();
 	}
